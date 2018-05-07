@@ -10,7 +10,7 @@
   ],
   "author": "Maxime Thirouin",
   "license": "MIT",
-  "repository": "https://github.com/MoOx/react-svg-inline.git",
+  "repository": "https://github.com/adanielyan/react-svg-inline.git",
   "main": "lib/index.js",
   "files": [
     "lib",
