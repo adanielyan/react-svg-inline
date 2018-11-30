@@ -10,7 +10,7 @@ const cleanups = {
   title: /<title>.*<\/title>/gi,
   desc: /<desc>.*<\/desc>/gi,
   comment: /<!--.*-->/gi,
-  // defs: /<defs>.*<\/defs>/gi,
+  defs: /<defs>.*<\/defs>/gi,
 
   // remove hardcoded dimensions
   width: / +width="\d+(\.\d+)?(px)?"/gi,
