@@ -34,6 +34,7 @@ class SVGInline extends Component {
       svg,
       fill,
       stroke,
+      strokeSize,
       width,
       accessibilityLabel,
       accessibilityDesc,
@@ -94,6 +95,14 @@ class SVGInline extends Component {
         : ""
       ) +
       (
+        strokeSize
+        ? ` stroke-width="${ strokeSize }"`
+        : ""
+      ) +
+      (
+        `stroke-linecap="square"`
+      ) +
+      (
         width || height
         ? " style=\"" +
             (width ? `width: ${width};` : "") +
@@ -145,6 +154,7 @@ SVGInline.propTypes = {
   svg: PropTypes.string.isRequired,
   fill: PropTypes.string,
   stroke: PropTypes.string,
+  strokeSize: PropTypes.number,
   cleanup: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.array,
